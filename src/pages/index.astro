@@ -10,8 +10,8 @@ import Tag from '../components/Tag.astro'
 			<div class="flex flex-col gap-10 xl:py-44 md:py-20 py-10 sm:px-0 order-last sm:order-1 items-center ">
 				<h2 class="lg:text-8xl md:text-5xl sm:max-w-[710px] text-4xl text-center sm:text-left px-0">Développeur web</h2>
 				<div class="sm:max-w-[710px] w-full space-y-4">
-					<p>Développeur frontend basé à Marseille, j’allie créativité et performance pour concevoir des interfaces web modernes et intuitives. Spécialiste des technologies web, je transforme vos idées en expériences numériques uniques. </p>
-					<p>Mon objectif ? Apporter une expérience fluide et engageante, pensée pour répondre aux attentes des utilisateurs. Chaque projet est une collaboration où l’écoute, l’adaptation et la passion pour le détail permettent de transformer vos idées en succès numériques. </p>
+					<p><strong>Développeur frontend basé à Marseille</strong>, j’allie créativité et performance pour concevoir des interfaces web modernes et intuitives. <strong>Spécialiste des technologies web</strong>, je transforme vos idées en expériences numériques uniques. </p>
+					<p>Mon objectif ? <strong>Apporter une expérience fluide et engageante</strong>, pensée pour répondre aux attentes des utilisateurs. Chaque projet est une collaboration où <strong>l’écoute, l’adaptation et la passion pour le détail</strong> permettent de transformer vos idées en succès numériques.</p>
 				</div>
 			</div>
 			<img src="/landscape.webp" alt="Paysage montrant des montagnes enneigées" class=" rounded-xl w-screen md:w-2/5 md:h-full h-36 order-1 sm:order-last object-cover sm:object-fill ">
@@ -33,13 +33,30 @@ import Tag from '../components/Tag.astro'
 		</section>
 		<section class="flex xl:gap-20 gap-10 w-full py-10 flex-col px-4 xl:px-0">
 			<h3 id="projets" class="text-3xl text-center w-full">Mes projets</h3>
-			<Card techno='react' title="La piscine" description='Développeur Frontend basé à Marseille, j’allie créativité et performance pour concevoir des interfaces web modernes et intuitives. Spécialiste des technologies web, je transforme vos idées en expériences numériques uniques.' src="/piscine.webp" href='https://lapiscine.netlify.app/' alt='Mise en avant du projet la piscine'>
-				<Tag techno="API"/>
+			<Card techno='AstroJS' title="La piscine" description="Participation à un tournoi de développeur web. Le but était d'intégrer au mieux une maquette Figma donnée par les créateurs du tournoi. Le site était ensuite review en live sur Twitch par les 2 créateurs." src="/piscine.webp" href='https://github.com/Ugzh/laPiscine' alt='Mise en avant du projet la piscine' color="bg-pink-500 text-white">
+				<Tag techno="Tailwind" color='bg-blue-500 text-white'/>
+				<Tag techno="Framer" color='bg-black text-white'/>
+			</Card>
+			<Card techno='Worpress' title="Inv'Home" description="Création d'un site vitrine pour un professionnel réalisant des états des lieux. Création de la charte graphique (logo, nom, slogan, couleurs...). Réalisation en 3 jours. " src="/invhome.webp" href='https://inv-home.fr/' alt="Mise en avant du projet Inv'Home" color="bg-blue-300">
+				<Tag techno="Figma" color='bg-gray-700 text-white'/>
+				<Tag techno="Illustrator" color='bg-orange-500 text-white'/>
+				<Tag techno="PHP" color='bg-violet-500 text-white'/>
+			</Card>
+			<Card techno='React' title="Kasa" description="Création d'un site type Airbnb, basé sur une maquette fournie. Récupération des données des appartements, descriptions, propriétaires et équipements via une API. Intégration de la maquette faite via React et ses librairies associées (Tailwind, React-router...) " src="/kasa.webp" href='https://github.com/Ugzh/Kasa' alt="Mise en avant du projet Kasa" color="bg-blue-600 text-white">
+				<Tag techno="API" color='bg-gray-300'/>
+				<Tag techno="Node" color='bg-green-700 text-white'/>
+				<Tag techno="Tailwind" color='bg-blue-500 text-white'/>
 			</Card>
 		</section>
 		<section class="space-y-4">
 			<h3 id="contact" class="text-3xl text-center w-full pt-36">Me contacter</h3>
-			<iframe width="1440px" height="600" src="https://256b4670.sibforms.com/serve/MUIFAOQbofFgRCXFoaLUkopxzjlP3GpNCu7gD4ll9i9F7XWFrD-I3HB5KQQ5fVXYs3l9jyBbFHeGYQeIt3UZcwpONEh_iCbvoqOHQFlkQSQTu7ZxOPqfmZaFFKwjkhUQxSSp1KtrZfBjlsOJ1TB0kyuVfZsxIofRwnKZAfFwjgX-nA3b_t6sla0sxnBUcHboA7q3zGI2u4bguHBm" frameborder="0" scrolling="auto" allowfullscreen style="display: block;margin-left: auto;margin-right: auto;max-width: 100%;"></iframe>
+			<iframe width="1440px" height="650" src="https://256b4670.sibforms.com/serve/MUIFAOQbofFgRCXFoaLUkopxzjlP3GpNCu7gD4ll9i9F7XWFrD-I3HB5KQQ5fVXYs3l9jyBbFHeGYQeIt3UZcwpONEh_iCbvoqOHQFlkQSQTu7ZxOPqfmZaFFKwjkhUQxSSp1KtrZfBjlsOJ1TB0kyuVfZsxIofRwnKZAfFwjgX-nA3b_t6sla0sxnBUcHboA7q3zGI2u4bguHBm" frameborder="0" scrolling="auto" allowfullscreen style="display: block;margin-left: auto;margin-right: auto;max-width: 100%;"></iframe>
 		</section>
 	</main>
 </Layout>
+
+<style>
+	h1,h2,h3{
+		font-family: 'Dela Gothic One', system-ui;
+	}
+</style>
