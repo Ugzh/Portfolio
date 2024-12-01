@@ -9,3 +9,10 @@ const { techno, color } = Astro.props;
 <div class=`rounded-full px-2 py-1 min-w-24 text-center max-w-24 ${color}`>
     <p>{techno}</p>
 </div>
+
+<style>
+    div:hover{
+        transform: scale(1.05);
+        transition: all 0.3s;
+    }
+</style>

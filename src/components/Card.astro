@@ -15,7 +15,7 @@ const { href, title, description, techno, src, alt,color } = Astro.props;
 ---
 
 <div class="w-full border border-slate-400 rounded-3xl p-6 flex ">
-	<a href=`${href}` class="flex gap-10 flex-col lg:flex-row md:h-96 h-full lg:h-full" target="_blank">
+	<a href=`${href}` class="flex gap-10 flex-col lg:flex-row md:h-96 h-full lg:h-full " target="_blank">
 		<img src=`${src}` alt=`${alt}` class="lg:max-w-80 lg:max-h-80 w-full h-1/3 rounded-2xl object-fit md:object-fill">
 	<div class="space-y-5">
 		<div class="space-y-2">
@@ -24,7 +24,7 @@ const { href, title, description, techno, src, alt,color } = Astro.props;
 		</div>
 		<div class="flex w-full flex-col gap-4"> 
 			<h4 class="underline-offset-3 underline text-lg">Technologies</h4>
-			<div class="flex gap-2">
+			<div class="flex gap-2 flex-wrap">
 				<Tag techno={techno} color=`${color}`></Tag>
 			<slot />
 			</div>
@@ -32,3 +32,7 @@ const { href, title, description, techno, src, alt,color } = Astro.props;
 	</div>
 	</a>
 </div>
+
+<style>
+
+</style>
